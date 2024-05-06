@@ -1,0 +1,32 @@
+.top-sc{
+    background-color: rgb(10, 95, 92);
+    min-height: 30vh;
+    color: white;
+}
+.container {
+    padding-top: 50px;
+}
+.container p{
+    font-size: smaller;
+}
+.latest{
+    text-align: center;
+}
+.row-post2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.sc{
+    margin-bottom: 30px;
+}
+.cards{
+    width: 400px;
+}

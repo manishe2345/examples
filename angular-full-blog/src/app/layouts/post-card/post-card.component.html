@@ -1,0 +1,39 @@
+<div class="card" *ngIf="cads" [routerLink]="['/post',cads.id]">
+    <img src={{cads.data.postimgpath}} alt="Avatar" height="160px" >
+    <div class="container">
+        <div class="content">
+            <small id="point1">{{cads.data.category.category}}</small>
+            <small id="point2" *ngIf="cads.data.isfeatured">Featured</small>
+            <small id="point3">Views- {{cads.data.views}}</small>
+            <h5>{{cads.data.title}}</h5>
+            <p>{{cads.data.excerpt}}</p>
+            <small id="point4">last updated on {{cads.data.createdat.toMillis() | date:'medium'}}</small>
+        </div>
+    </div>
+</div>
+<div class="card" *ngIf="lat" [routerLink]="['/post',lat.id]">
+    <img src={{lat.data.postimgpath}} alt="Avatar" height="160px" >
+    <div class="container">
+        <div class="content">
+            <small id="point1">{{lat.data.category.category}}</small>
+            <small id="point2" *ngIf="lat.data.isfeatured">Featured</small>
+            <small id="point3">Views- {{lat.data.views}}</small>
+            <h5>{{lat.data.title}}</h5>
+            <p>{{lat.data.excerpt}}</p>
+            <small id="point4">last updated on {{lat.data.createdat.toMills() | date:'medium'}}</small>
+        </div>
+    </div>
+</div>
+<div class="card" *ngIf="catd" [routerLink]="['/post',catd.id]">
+    <img src={{catd.data.postimgpath}} alt="Avatar" height="160px" >
+    <div class="container">
+        <div class="content">
+            <small id="point1">{{catd.data.category.category}}</small>
+            <small id="point2" *ngIf="catd.data.isfeatured">Featured</small>
+            <small id="point3">Views- {{catd.data.views}}</small>
+            <h5>{{catd.data.title}}</h5>
+            <p>{{catd.data.excerpt}}</p>
+            <small id="point4">last updated on {{catd.data.createdat.toMillis() | date:'medium'}}</small>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="comment2" >
+    <h4>COMMENTS ({{commentarray.length}})</h4>
+    <div class="c1" *ngFor="let comment of commentarray">
+        <small><b>{{comment.data.name}}</b></small><br>
+        <small class="p1">LAST UPDATED-{{comment.data.createdat.toMillis() | date}}</small><br>
+        <small class="para">
+            <p>{{comment.data.email}}</p>
+        </small>
+        <a class="l1" href="#">REPLEY</a>
+        <a class="l2" href="#">VIEW REPLEY</a>
+    </div>
+</div>

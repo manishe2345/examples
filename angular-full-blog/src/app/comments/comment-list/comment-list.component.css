@@ -1,0 +1,28 @@
+.comment2 {
+    text-align: left;
+    box-shadow: 0 8px 12px 0 rgba(85, 84, 84, 0.496);
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.comment2 h4 {
+    color: rgb(63, 132, 106);
+}
+
+.c1 {
+    background-color: rgb(180, 179, 179);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.p1 {
+    font-size: smaller;
+    color: rgb(163, 23, 23);
+}
+
+.l1,
+.l2 {
+    text-decoration: none;
+    font-size: small;
+    padding-right: 20px;
+}

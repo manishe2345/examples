@@ -1,0 +1,11 @@
+<div class="comment1">
+    <h4>LEAVE A COMMENT</h4>
+    <small>Lorem ipsum dolor sit amet consectetur adipisicing el</small>
+    <form class="commentform" #commentForm=ngForm (ngSubmit)="onpost(commentForm.value)">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" ngModel required #name=ngModel [ngClass]="{'is-invalid':name.touched && name.invalid}"><br>
+        <label for="comment">Comment</label><br>
+        <textarea type="text" id="comment" name="comment" ngModel required #comment=ngModel [ngClass]="{'is-invalid':comment.touched && comment.invalid}"></textarea><br>
+        <button type="post">POST</button>
+    </form>
+</div>

@@ -1,0 +1,64 @@
+.container {
+    margin: 0 90px 30px 90px;
+    padding: 30px 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.header {
+    padding-bottom: 30px;
+}
+
+.header img {
+    width: 100%;
+}
+
+.completecolumn {
+    padding-right: 100px;
+}
+
+.headercontent {
+    margin-top: 40px;
+}
+
+.headercontent p {
+    margin-top: 40px;
+}
+
+.column1row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+}
+
+.point1 {
+    color: red;
+}
+
+.point2 {
+    color: green;
+}
+
+.point3 {
+    color: blue;
+}
+
+.point4 {
+    color: rgb(216, 216, 15);
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    padding-right: 60px;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+}
+
+.cards {
+    padding-bottom: 20px;
+}

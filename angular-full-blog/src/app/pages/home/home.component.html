@@ -1,0 +1,31 @@
+<div class="body">
+    <div class="featured">
+        <div class="container">
+            <div class="top-bar">
+                <h2>FEATURED POSTS</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur ,skjd</p>
+            </div>
+            <div class="row-post">
+                <div class="cards" *ngFor="let card of Cards">
+                    <app-post-card [cads]="card"></app-post-card>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="latest">
+        <div class="container">
+            <div class="top-bar">
+                <h2>LATEST POSTS</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur ,skjd</p>
+            </div>
+            <div class="column">
+                <div class="row-post2">
+                    <div class="cards" *ngFor="let latest of latestCards">
+                        <app-post-card [lat]="latest"></app-post-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

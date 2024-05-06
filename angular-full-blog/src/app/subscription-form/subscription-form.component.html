@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>SUBSCRIPTION FORM</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas offi</p>
+    <div class="form">
+        <form class="form-inline" #subForm=ngForm (ngSubmit)="onsubscribe(subForm.value)" >
+            <input type="username" id="name" placeholder="Your Name" name="username" ngModel required #username=ngModel [ngClass]="{'is-invalid':username.touched && username.invalid }">
+            <input type="email" id="email" placeholder="Email Address" name="email" ngModel required #email=ngModel [ngClass]="{'is-invalid':email.touched && email.invalid}">
+            <button type="subscribe" [disabled]="subForm.invalid">SUBSCRIBE</button>
+        </form>
+    </div>
+</div>

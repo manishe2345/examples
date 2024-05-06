@@ -1,0 +1,28 @@
+.about{
+    padding: 80px 0 160px 0;
+}
+.container{
+    padding: 30px 40px 30px 40px;
+    text-align: center;
+    background-color: rgb(9, 99, 84);
+    color: white;
+}
+.para{
+    background: rgb(229, 238, 240);
+    color: black;
+    text-align: left;
+    padding: 30px;
+}
+.para button {
+    padding: 10px 20px;
+    background-color: rgb(18, 117, 97);
+    border: 1px solid #ddd;
+    color: white;
+  }
+  
+  .para button:hover {
+    background-color: royalblue;
+  }
+  .button{
+    text-align: center;
+  }

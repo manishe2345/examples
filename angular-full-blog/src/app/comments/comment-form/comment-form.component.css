@@ -1,0 +1,41 @@
+.comment1 {
+    text-align: left;
+    box-shadow: 0 8px 12px 0 rgba(85, 84, 84, 0.496);
+    padding: 30px;
+}
+
+.comment1 h4 {
+    color: rgb(63, 132, 106);
+}
+
+.commentform {
+    margin-top: 35px;
+    padding-left: 5px;
+}
+
+.commentform button {
+    padding: 10px 20px;
+    background-color: rgb(18, 117, 97);
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.commentform button:hover {
+    background-color: rgb(34, 154, 128);
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: rgb(180, 179, 179);
+}
+
+#name,
+#comment {
+    margin: 20px 0;
+}

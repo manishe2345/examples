@@ -1,0 +1,19 @@
+<div class="sc">
+    <div class="top-sc">
+        <div class="container">
+            <h2>{{title.toLocaleUpperCase()}}</h2>
+            <p>Lorem ipsum dolor sit amet consectekdhwkehu</p>
+        </div>
+    </div>
+    <div class="latest">
+        <div class="container">
+            <div class="column">
+                <div class="row-post2">
+                    <div class="cards" *ngFor="let cat of catcards">
+                        <app-post-card [catd]="cat"></app-post-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
