@@ -1,0 +1,39 @@
+<div class="container1">
+    <div class="container">
+        <h2>NEW CATEGORY</h2>
+        <P>you can add new category from here..!</P>
+        <form class="add" #categoryForm='ngForm' (ngSubmit)="onSubmit(categoryForm)">
+            <input type="text" id="add" name="category" placeholder="Add New Categories.." [(ngModel)]="formCategory"
+                #nc='ngModel' required [ngClass]="{'is-invalid' : nc.touched && nc.invalid}">
+            <div class="alert" *ngIf="nc.touched && nc.invalid">category field is required</div>
+            <button type="submit" [disabled]="categoryForm.invalid">{{formStatus}} Category</button>
+        </form>
+    </div>
+    <div class="tb">
+        <table>
+            <div class="t1">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let category of categoryArray; let i=index">
+                    <tr>
+                        <td>{{i+1}}</td>
+                        <td>{{category.data.Catgor}}</td>
+                        <td>
+                            <div class="btn">
+                                <button style="background-color: rgb(201, 201, 2);"
+                                    (click)="onEdit(category.data.Catgor, category.id)">EDIT</button>
+                                <button style="background-color: rgb(221, 66, 66);"
+                                    (click)="onDelete(category.id)">DELETE</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </div>
+        </table>
+    </div>
+</div>

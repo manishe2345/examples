@@ -1,0 +1,27 @@
+.container{
+    margin: 30px;
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.card{
+     width: 250px;
+    min-height: 200px;
+    box-shadow: 0 0px 14px 0 rgba(154, 150, 150, 0.496);
+    text-align: center;
+    background: #e0f8ff;
+}
+.card h1{
+    font-size: 40px;
+}
+.card h1 i{
+    margin: 20px 0;
+}
+.card h2{
+    margin-bottom: 20px;
+}
+.card:hover{
+    box-shadow: 0 0px 16px 0 rgba(109, 96, 96, 0.496);
+    cursor: pointer;
+}
