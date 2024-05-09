@@ -1,0 +1,27 @@
+.container{
+    text-align: center;
+    line-height: 30px ;
+}
+footer{
+    height: 80px;
+    padding: 15px;
+    background-color: rgb(232, 242, 242);
+}
+.foo-logo{
+    padding: 5px 20px;
+    background: #e5f5ea;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+.foobar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+.foo-link{
+    text-decoration: none;
+}
+.foo-item{
+    list-style: none;
+}

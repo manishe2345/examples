@@ -1,0 +1,15 @@
+<div class="card">
+    <h2>Login</h2>
+    <p><small>login to your admin account to post a new blog post</small></p>
+    <form #loginForm=ngForm >
+        <div>
+        <input type="text" placeholder="Email" name="email" ngModel required #email=ngModel [ngClass]="{'is-invalid':email.touched && email.invalid}">
+        <div class="alert" *ngIf="email.touched && email.invalid">email cannot be empty</div>
+        </div>
+        <div>
+        <input type="password" placeholder="Password" name="password" ngModel required #password=ngModel [ngClass]="{'is-invalid':password.touched && password.invalid}">
+        <div class="alert" *ngIf="password.touched && password.invalid">password cannot be empty</div>
+        </div>
+        <button type="button" [disabled]="loginForm.invalid" (click)="onsubmit(loginForm.value)">Login</button>
+    </form>
+</div>
